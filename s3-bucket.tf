@@ -5,8 +5,8 @@ resource "aws_s3_bucket" "bucket1" {
         }
     
 }
-resource "aws_s3_bucket_versioning" "example" {
-  bucket = aws_s3_bucket.example.id
+resource "aws_s3_bucket_versioning" "bucket1" {
+  bucket = aws_s3_bucket.bucket1.id
 
   versioning_configuration {
     status = "Disabled"
